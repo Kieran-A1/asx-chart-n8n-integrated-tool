@@ -31,7 +31,7 @@ def _canonical_ticker(asx_code: str) -> str:
 
 def _canonical_recipient(recipient: str) -> str:
     value = (recipient or "").strip().lower()
-    return value or "panosa@alexod.com"
+    return value or "test@gmail.com"
 
 
 def _request_key(asx_code: str, recipient: str, send_email: bool) -> str:
@@ -98,7 +98,7 @@ async def _run_report(
 @mcp.tool()
 async def create_asx_report(
     asx_code: str = "",
-    recipient: str = "panosa@alexod.com",
+    recipient: str = "test@gmail.com",
     output_dir: str = "output",
     email_subject: str = "",
     email_body: str = "",

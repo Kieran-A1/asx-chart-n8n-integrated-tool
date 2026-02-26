@@ -17,7 +17,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--asx-code", default="", help="Ticker code (example: BHP).")
     parser.add_argument(
         "--recipient",
-        default="panosa@alexod.com",
+        default="test@gmail.com",
         help="Recipient email address.",
     )
     parser.add_argument(

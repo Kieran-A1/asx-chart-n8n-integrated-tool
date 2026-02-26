@@ -76,7 +76,7 @@ The MCP server currently exposes exactly these tools:
 Arguments for `create_asx_report`:
 
 - `asx_code` (string): e.g. `BHP`, `CBA`, `CSL`; URL becomes `{ASX_CODE}.AX` on Yahoo Finance (default `HUB`)
-- `recipient` (string): default `panosa@alexod.com`
+- `recipient` (string): default `test@gmail.com`
 - `output_dir` (string): default `output`
 - `email_subject` (string): optional
 - `email_body` (string): optional
@@ -119,7 +119,7 @@ Create today's Yahoo Finance chart report for HUB and email it to panosa@alexod.
 Run this in a separate terminal tab/window while your virtualenv is active.
 
 ```bash
-asx-report-cli --asx-code HUB --recipient panosa@alexod.com
+asx-report-cli --asx-code HUB --recipient test@gmail.com
 ```
 
 Dry run (build files only, skip email):
