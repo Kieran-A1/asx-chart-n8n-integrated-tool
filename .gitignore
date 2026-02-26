@@ -1,0 +1,21 @@
+# Python caches/build
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# Virtual environments
+.venv/
+
+# Local environment files
+.env
+
+# macOS and editor artifacts
+.DS_Store
+
+# Local generated reports
+output/*
+!output/.gitkeep
+
+# Misc local history
+.Rhistory
+#note this is just in case uploads to github, so it doesn't upload venv, env, etc.
