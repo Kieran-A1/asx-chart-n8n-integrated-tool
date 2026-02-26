@@ -22,11 +22,16 @@ The MCP tool is intended for use from an n8n AI Agent with Ollama.
 ## Install and Initial Setup
 
 ```bash
-python3 -m venv .venv #makes an isolated python virtual environment
-source .venv/bin/activate #activates venv so uses .venv's python, not system python
-pip install -e . #installs packages in editable mode so local code changes are picked up
-playwright install chromium #installs chromium browser package for playwright screenshots
+python3 -m venv .venv 
+source .venv/bin/activate
+pip install -e . 
+playwright install chromium
 ```
+this:
+makes an isolated python virtual environment
+activates venv so uses .venv's python, not system python
+installs packages in editable mode so local code changes are picked up
+installs chromium browser package for playwright screenshots
 
 ## Run (Two Terminals)
 
@@ -188,4 +193,5 @@ n8n via MCP workflow
 - server.py exposes the MCP tool and calls the pipeline directly in pipeline.py
 
 # note if downloading off git repo
-.env wasn't uploaded, only .env.example, so need to run cp .env.example .env after and make sure set -a; source .env; set +a has been run before running program.
+.env wasn't uploaded, only .env.example, so need to run cd ~/Desktop/asx-chart-n8n-integrated-tool and cp .env.example .env after and make sure set -a; source .env; set +a has been run before running program.
+also need to rerun Install and Initial Setup as need to make .venv as well
