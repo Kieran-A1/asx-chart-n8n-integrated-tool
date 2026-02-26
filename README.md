@@ -186,3 +186,6 @@ and asx-report-cli running asx_mcp.cli:main.
 n8n via MCP workflow
 - n8n mcp client talks to the asx-mcp-server (this is defined as mcp server entrypoint in pyproject.toml), which runs server.py file.
 - server.py exposes the MCP tool and calls the pipeline directly in pipeline.py
+
+# note if downloading off git repo
+.env wasn't uploaded, only .env.example, so need to run cp .env.example .env after and make sure set -a; source .env; set +a has been run before running program.
