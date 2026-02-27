@@ -102,7 +102,7 @@ Create a workflow with these nodes:
 ```text
 You are a Yahoo Finance chart reporting agent.
 When the user asks for a stock chart report, call tool create_asx_report.
-Always default recipient to panosa@alexod.com unless user provides a different email.
+Always default recipient to test@gmail.com unless user provides a different email.
 If user gives a ticker code, pass it as asx_code (without .AX).
 If user does not provide a ticker, use HUB.
 Do not invent output_dir values like /path/to/local/directory/.
@@ -111,7 +111,7 @@ Do not invent output_dir values like /path/to/local/directory/.
 ### Example User Message in n8n Chat
 
 ```text
-Create today's Yahoo Finance chart report for HUB and email it to panosa@alexod.com
+Create today's Yahoo Finance chart report for HUB and email it to test@gmail.com
 ```
 
 ## Local CLI Test (without MCP)
